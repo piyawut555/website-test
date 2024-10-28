@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    background-color: #878787;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(247, 236, 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.user-name{
+    background: rgb(30, 30, 30);
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.user-name:hover{
+    background: rgb(74, 74, 74);
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+    position: relative;
+    top: 80px;
+    margin: 10px 70px 70px;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #000000;
+}
+
+.form-button{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.form-button form{
+    margin-left: 5px;
+}
+
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.green{
+    background-color: rgb(20, 208, 76);
+}
+
+.green:hover{
+    background-color: rgb(52, 181, 91);
+}
+
+.red{
+    background-color: red;
+}
+
+.red:hover{
+    background-color: rgb(254, 60, 60);
+}
+
+.form-wrapper{
+    position: relative;
+    top: 100px;
+    max-width: 600px;
+    margin: 0px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-wrapper form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper form label{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.form-wrapper form input{
+    font-size: 18px;
+}
