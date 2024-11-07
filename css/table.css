@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space is distributed between elements */
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.table {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.btn-success {
+    background: rgb(247, 236, 16);
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-disable {
+    background: gray;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-booked {
+    background-color: green;
+    color: white;
+}
+
+
+p {
+    margin-top: auto;
+    text-align: center;
+    font-size: 16px;
+}

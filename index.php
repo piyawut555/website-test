@@ -23,9 +23,9 @@ if(isset($_SESSION['user_login'])){
         <a href="#" class="logo">Logo</a>
 
         <nav class="navbar">
-            <a href="#">หน้าแรก</a>
+            <a href="index.php">หน้าแรก</a>
             <a href="#">เกี่ยวกับ</a>
-            <a href="#">จองโต๊ะ</a>
+            <a href="table.php">จองโต๊ะ</a>
             <a href="#">ติดต่อ</a>
         </nav>
 
